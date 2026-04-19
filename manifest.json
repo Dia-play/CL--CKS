@@ -2,6 +2,8 @@
   "name": "My Custom Clock",
   "short_name": "Clock",
   "start_url": "index.html",
+  "scope": "/",
+  "display_override": ["fullscreen", "minimal-ui"],
   "display": "fullscreen",
   "orientation": "landscape",
   "background_color": "#000000",
