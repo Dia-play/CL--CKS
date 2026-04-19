@@ -12,3 +12,8 @@ function updateClock() {
 
 setInterval(updateClock, 1000);
 updateClock(); // Initial call
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js')
+    .then(() => console.log("Service Worker Registered"));
+}
